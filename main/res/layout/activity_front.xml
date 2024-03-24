@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp"
+    android:id="@+id/ci_item_id"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:elevation="7dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/interest_linear"
+            android:layout_margin="3dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="90dp"
+                android:text="Current date"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/tvInterest" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                android:layout_marginEnd="5dp"
+                android:hint="DD"
+                android:maxLength="2"
+                android:inputType="number"
+                android:id="@+id/etAgeDay"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:inputType="number"
+                android:hint="MM"
+                android:maxLength="2"
+                android:id="@+id/etAgeMonth"
+                android:clickable="true"
+                android:layout_marginRight="5dp" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                android:hint="YYYY"
+                android:maxLength="4"
+                android:id="@+id/etAgeYear"
+                android:clickable="true"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:id="@+id/principal_linear"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+
+
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:minWidth="90dp"
+                android:textSize="16dp"
+                android:id="@+id/tvAmount" />
+            <EditText
+                android:layout_width="70dp"
+                android:hint="DD"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:maxLength="2"
+                android:layout_marginEnd="5dp"
+                android:inputType="number"
+                android:id="@+id/etBirthdayDay"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp" />
+            <EditText
+                android:layout_width="70dp"
+                android:hint="MM"
+                android:maxLength="2"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:inputType="number"
+                android:id="@+id/etBirthdayMonth"
+                android:clickable="true"
+                android:layout_marginRight="5dp" />
+            <EditText
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:hint="YYYY"
+                android:maxLength="4"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                android:id="@+id/etBirthdayYear"
+                android:clickable="true"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+
+
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="19dp"
+        android:text="CALCULATE"
+        android:layout_marginBottom="5dp"
+        android:elevation="9dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:elevation="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/year_linear"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:text="Year"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/tvYear" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                android:textStyle="bold"
+
+
+                android:text="Zero"
+                android:id="@+id/etYear"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/month_linear"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:text="Month"
+                android:textStyle="bold"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textSize="16dp"
+                android:id="@+id/tvMonth" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                android:textStyle="bold"
+                android:text="Zero"
+                android:id="@+id/etMonth"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tAmount_linear"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:minWidth="100dp"
+                android:text="Days"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="5dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:id="@+id/tvTamount" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                android:textStyle="bold"
+                android:text="Zero"
+                android:id="@+id/tvResult"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/year_horizontal"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:text="Day of Birth"
+            android:textStyle="bold"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:id="@+id/tvday" />
+        <EditText
+
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:editable="false"
+            android:textStyle="bold"
+            android:text="Birthday"
+            android:id="@+id/etbday"/>
+    </LinearLayout>
+</LinearLayout>
